@@ -1,0 +1,139 @@
+## ams_version=1.0
+
+Model Main_Model {
+    Procedure procLeerExcel {
+        Body: {
+            spreadsheet::SetActiveSheet(spExcelWorkBook, "Intervals");
+            
+            spreadsheet::RetrieveSet(spExcelWorkBook,sFligths,"sFlights");
+            
+            spreadsheet::RetrieveTable(spExcelWorkBook, pEarliestArrivalTime, "pEarliestArrivalTime", rowsrange:"sFlights");
+            spreadsheet::RetrieveTable(spExcelWorkBook,pLatestArrivalTime, "pLatestArrivalTime", rowsrange: "sFlights");
+            spreadsheet::RetrieveTable(spExcelWorkBook,pTargetTime, "pTargetTime", rowsrange: "sFlights");
+            
+            spreadsheet::RetrieveTable(spExcelWorkBook,pMinSeparation,"pMinSeparation",
+            	rowsrange:"pMinSeparationRowsRange", columnsrange:"pMinSeparationColumnsRange");
+            
+            spreadsheet::RetrieveTable(spExcelWorkBook, pEarlinessPenalty, "pEarlinessPenalty", rowsrange: "pPenaltyRowsRange");
+            spreadsheet::RetrieveTable(spExcelWorkBook, pTardinessPenalty, "pTardinessPenalty", rowsrange: "pPenaltyRowsRange");
+            
+            
+            
+            spreadsheet::CloseWorkbook(spExcelWorkBook,0);
+        }
+        StringParameter spExcelWorkBook {
+            InitialData: "datos_aterrizajes_2.xlsx";
+        }
+    }
+    Section SecModels {
+        Procedure SolveFirstProblem {
+            Body: {
+                empty Allvariables;
+                showProgressWindow;
+                solve mpLandingScheduling;
+            }
+        }
+        DeclarationSection Comun {
+            Set sFligths {
+                Index: iFlight, iFlight2;
+            }
+            Parameter pEarliestArrivalTime {
+                IndexDomain: iFlight;
+            }
+            Parameter pLatestArrivalTime {
+                IndexDomain: iFlight;
+            }
+            Parameter pTargetTime {
+                IndexDomain: iFlight;
+            }
+            Parameter pMinSeparation {
+                IndexDomain: (iFlight,iFlight2);
+            }
+            Parameter pEarlinessPenalty {
+                IndexDomain: iFlight;
+            }
+            Parameter pTardinessPenalty {
+                IndexDomain: iFlight;
+            }
+            Parameter pBigM;
+            Variable v01Precedence {
+                IndexDomain: (iFlight, iFlight2);
+                Range: binary;
+            }
+            Variable vLandingTime {
+                IndexDomain: iFlight;
+                Range: nonnegative;
+            }
+            Variable vEarliness {
+                IndexDomain: iFlight;
+                Range: nonnegative;
+            }
+            Variable vTardiness {
+                IndexDomain: iFlight;
+                Range: nonnegative;
+            }
+            Variable vTotalPenalty {
+                Range: free;
+                Definition: {
+                    sum(iFlight,
+                    	pEarlinessPenalty(iFlight)*vEarliness(iFlight)+
+                    	pTardinessPenalty(iFlight)*vTardiness(iFlight)
+                    )
+                }
+            }
+            Constraint cTimeWindow {
+                IndexDomain: iFlight;
+                Definition: pEarliestArrivalTime(iFlight)<=vLandingTime(iFlight)<=pLatestArrivalTime(iFlight);
+            }
+            Constraint cUniquePrecedence {
+                IndexDomain: (iFlight,iFlight2)|iFlight<>iFlight2;
+                Definition: v01Precedence(iFlight, iFlight2)+v01Precedence(iFlight2, iFlight)=1;
+            }
+            Constraint cMinSeparation {
+                IndexDomain: (iFlight,iFlight2);
+                Definition: {
+                    vLandingTime(iFlight2)
+                    >=
+                    vLandingTime(iFlight)
+                    +pMinSeparation(iFlight, iFlight2)
+                    -v01Precedence(iFlight2, iFlight)*pBigM
+                }
+            }
+            Constraint cTardiness {
+                IndexDomain: iFlight;
+                Definition: vTardiness(iFlight)>=vLandingTime(iFlight)-pTargetTime(iFlight);
+            }
+            Constraint cEarliness {
+                IndexDomain: iFlight;
+                Definition: vEarliness(iFlight)>=pTargetTime(iFlight)-vLandingTime(iFlight);
+            }
+            Constraint cTimeLinking {
+                IndexDomain: iFlight;
+                Definition: vLandingTime(iFlight)=pTargetTime(iFlight)+vTardiness(iFlight)-vEarliness(iFlight);
+            }
+            MathematicalProgram mpLandingScheduling {
+                Objective: vTotalPenalty;
+                Direction: minimize;
+                Constraints: AllConstraints;
+                Variables: AllVariables;
+                Type: Automatic;
+            }
+        }
+    }
+    Section SecOutput {
+        DeclarationSection DecOutput {
+            Set sFlightOrdered {
+                SubsetOf: sFligths;
+                OrderBy: vLandingTime(iFlight);
+                Definition: sFligths;
+            }
+        }
+    }
+    Procedure MainExecution;
+    Procedure MainInitialization;
+    Procedure MainTermination {
+        Body: {
+            return DataManagementExit();
+        }
+    }
+}

@@ -1,0 +1,83 @@
+spreadsheet::SetActiveSheet(datos_aterrizajes_2.xls, Intervals) unable to get a handle to the workbook: The workbook "C:\Miguel\Dropbox\111_Miguel\Docencia\1516 etsii mom\1516 mcio1\temporal_de_recursos_io\xpress_y_similares\aimms_projects_y_pdfs\programacion_aterrizajes\aimms\programación_aterrizajes\datos_aterrizajes_2.xls" cannot be found or opened.
+spreadsheet::SetActiveSheet(datos_aterrizajes_2.xls, Intervals) unable to get a handle to the workbook: The workbook "C:\Miguel\Dropbox\111_Miguel\Docencia\1516 etsii mom\1516 mcio1\temporal_de_recursos_io\xpress_y_similares\aimms_projects_y_pdfs\programacion_aterrizajes\aimms\programación_aterrizajes\datos_aterrizajes_2.xls" cannot be found or opened.
+spreadsheet::SetActiveSheet(datos_aterrizajes_2.xls, Intervals) unable to get a handle to the workbook: The workbook "C:\Miguel\Dropbox\111_Miguel\Docencia\1516 etsii mom\1516 mcio1\temporal_de_recursos_io\xpress_y_similares\aimms_projects_y_pdfs\programacion_aterrizajes\aimms\programación_aterrizajes\datos_aterrizajes_2.xls" cannot be found or opened.
+spreadsheet::SetActiveSheet(datos_aterrizajes_2.xls, Intervals) unable to get a handle to the workbook: The workbook "C:\Miguel\Dropbox\111_Miguel\Docencia\1516 etsii mom\1516 mcio1\temporal_de_recursos_io\xpress_y_similares\aimms_projects_y_pdfs\programacion_aterrizajes\aimms\programación_aterrizajes\datos_aterrizajes_2.xls" cannot be found or opened.
+spreadsheet::SetActiveSheet(datos_aterrizajes_2.xls, Intervals) unable to get a handle to the workbook: The workbook "C:\Miguel\Dropbox\111_Miguel\Docencia\1516 etsii mom\1516 mcio1\temporal_de_recursos_io\xpress_y_similares\aimms_projects_y_pdfs\programacion_aterrizajes\aimms\programación_aterrizajes\datos_aterrizajes_2.xls" cannot be found or opened.
+spreadsheet::RetrieveTable(datos_aterrizajes_2.xlsx, pEarliestArrivalTime(iFlight), pEarliestArrivalTime, sFlights, , , 0) failed: The workbook doesn't contain range "pEarliestArrivalTime".
+spreadsheet::RetrieveTable(datos_aterrizajes_2.xlsx, pMinSeparation(iFlight,iFlight2), pMinSeparation, pMinSeparationPenaltyRowsRange, pMinSeparationColumnsRange, , 0) failed: The workbook doesn't contain range "pMinSeparationPenaltyRowsRange".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 18 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+After zero iterations GUROBI 5.6 concluded that mpLandingScheduling is infeasible.
+Semantic error at line 326, column 22.
+The identifier "vTargetTime" has not been declared.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+After zero iterations GUROBI 5.6 concluded that mpLandingScheduling is infeasible.
+Warning at line 407.
+After zero iterations CPLEX 12.6 concluded that mpLandingScheduling is infeasible.
+Warning at line 407.
+After zero iterations GUROBI 5.6 concluded that mpLandingScheduling is infeasible.
+Warning at line 407.
+After zero iterations CPLEX 12.6 concluded that mpLandingScheduling is infeasible.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,DLH1114)" and "cUniquePrecedence(DLH1114,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,AEA6024)" and "cUniquePrecedence(AEA6024,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+The rows "cUniquePrecedence(IBE7758,KLM3331)" and "cUniquePrecedence(KLM3331,IBE7758)" are equal in the generated mathematical program "mpLandingScheduling".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 3 in user-defined function section "SolveFirstProblem".
+Only 3 out of 19 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.

@@ -1,0 +1,8 @@
+* The timestamps in this namechange file are stored in Coordinated universal time (UTC).
+"Section_1" "models" "2016-03-09 21:50:38"
+"pEarliestArrival" "pEarliestArrivalTime" "2016-03-09 21:54:43"
+"cMi" "cMinSeparation" "2016-03-09 22:04:41"
+"vLandinfTime" "vLandingfTime" "2016-03-09 22:06:00"
+"vLandingfTime" "vLandingTime" "2016-03-09 22:06:55"
+"Section_1" "SecOutput" "2016-03-09 22:38:57"
+"Models" "SecModels" "2016-03-09 22:39:05"
